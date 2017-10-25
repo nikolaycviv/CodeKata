@@ -4,7 +4,7 @@
  * @returns {string} the result
  */
 function camelCase(string) {
-
+    return string.split(' ').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join('');
 }
 
 module.exports = {

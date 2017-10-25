@@ -5,16 +5,16 @@ describe('Basic tests', () => {
     it('test case -> TestCase', () => {
         assert.equal(camelCase('test case'), 'TestCase');
     });
-    it('test case -> TestCase', () => {
+    it('camel case method -> CamelCaseMethod', () => {
         assert.equal(camelCase('camel case method'), 'CamelCaseMethod');
     });
-    it('test case -> TestCase', () => {
+    it('\'say hello \' -> SayHello', () => {
         assert.equal(camelCase('say hello '), 'SayHello');
     });
-    it('test case -> TestCase', () => {
+    it('\' camel case word\' -> CamelCaseWord', () => {
         assert.equal(camelCase(' camel case word'), 'CamelCaseWord');
     });
-    it('test case -> TestCase', () => {
+    it('\'\' -> \'\'', () => {
         assert.equal(camelCase(''), '');
     });
 });
