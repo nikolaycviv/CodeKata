@@ -18,12 +18,12 @@
   "rules": {
     "comma-dangle": ["warn", "never"],
     "linebreak-style": ["warn", "unix"],
-    "quotes": [2, "single"],
-    "semi": [2, "always"],
+    "quotes": [2, "double"],
     "no-unused-expressions": "warn",
     "no-useless-concat": "warn",
     "block-scoped-var": "error",
     "consistent-return": "error",
-    "no-mixed-operators": "off"
+    "no-mixed-operators": "off",
+    "function-paren-newline": ["error", "consistent"]
   }
 }

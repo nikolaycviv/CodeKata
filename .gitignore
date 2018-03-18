@@ -27,11 +27,6 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules
-jspm_packages
-public/node_modules
-
 # Optional npm cache directory
 .npm
 
@@ -39,6 +34,9 @@ public/node_modules
 .node_repl_history
 
 # node modules and others
+package-lock.json
+jspm_packages
+public/node_modules
 node_modules
 node_modules/**/*
 .vscode/

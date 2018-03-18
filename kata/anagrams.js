@@ -6,19 +6,30 @@
  */
 
 /**
+//   "singleQuote": false,
  * Returns an anagram
  * @param {string} word - string that is the matching one
  * @param {array} words - array of strings that could cointain the "word"
  * @returns {array} array of matching anagrams of word in words
-*/
+ */
 function anagrams(word, words) {
-    if (typeof words !== 'object' || typeof word !== 'string') {
-        return;
-    }
+  if (typeof words !== "object" || typeof word !== "string") {
+    return false;
+  }
 
-    return words.filter((item) => item.split('').sort().join('') === word.split('').sort().join(''));
+  return words.filter(
+    item =>
+      item
+        .split("")
+        .sort()
+        .join("") ===
+      word
+        .split("")
+        .sort()
+        .join("")
+  );
 }
 
 module.exports = {
-    anagrams
+  anagrams
 };
