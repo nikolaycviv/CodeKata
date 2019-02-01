@@ -7,24 +7,24 @@
  * @returns {array} the result
  */
 function sumDigPow(a, b) {
-  if (typeof a !== "number" && typeof b !== "number") {
-    return false;
-  }
-  const result = [];
-
-  for (let i = a; i <= b; i += 1) {
-    let sum = 0;
-    for (let j = 0; j <= i.toString().length; j += 1) {
-      sum += parseInt(i.toString()[j], 10) ** (j + 1);
-      if (sum === i) {
-        result.push(i);
-      }
+    if(typeof a !== 'number' && typeof b !== 'number') {
+        return false;
     }
-  }
+    const result = [];
 
-  return result;
+    for(let i = a; i <= b; i = i + 1) {
+        let sum = 0;
+        for(let j = 0; j <= i.toString().length; j++) {
+            sum = sum + parseInt(i.toString()[j], 10) ** (j + 1);
+            if(sum === i) {
+                result.push(i);
+            }
+        }
+    }
+
+    return result;
 }
 
 module.exports = {
-  sumDigPow
+    sumDigPow
 };

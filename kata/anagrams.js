@@ -13,23 +13,17 @@
  * @returns {array} array of matching anagrams of word in words
  */
 function anagrams(word, words) {
-  if (typeof words !== "object" || typeof word !== "string") {
-    return false;
-  }
+    if(typeof words !== 'object' || typeof word !== 'string') {
+        return false;
+    }
 
-  return words.filter(
-    item =>
-      item
-        .split("")
-        .sort()
-        .join("") ===
-      word
-        .split("")
-        .sort()
-        .join("")
-  );
+    return words.filter(
+        (item) => {
+            return item.split('').sort().join('') === word.split('').sort().join('');
+        }
+    );
 }
 
 module.exports = {
-  anagrams
+    anagrams
 };

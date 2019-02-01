@@ -4,13 +4,13 @@
  * @returns {boolean} either an isogram or not
  */
 function isIsogram(str) {
-  if (typeof str !== "string") {
-    return false;
-  }
-  const regex = /^(?:([a-z])(?!.*\1))*$/;
-  return regex.test(str) && str !== "";
+    if(typeof str !== 'string') {
+        return false;
+    }
+    const regex = /^(?:([a-z])(?!.*\1))*$/;
+    return regex.test(str) && str !== '';
 }
 
 module.exports = {
-  isIsogram
+    isIsogram
 };
